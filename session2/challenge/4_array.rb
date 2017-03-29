@@ -7,3 +7,6 @@
 # get_squares [25, 4, 9, 6, 50, 16, 5] # => [4, 5]
 
 # This time you will have to define the method, it's called: get_squares
+def get_squares num1
+ num1.select{|x| x if num1.include?(x**2)}.sort
+end 
